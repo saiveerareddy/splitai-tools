@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-IN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FD Calculator – Fixed Deposit Maturity Amount &amp; Interest</title>
+<meta name="description" content="Calculate fixed deposit maturity value and interest earned with quarterly, monthly or yearly compounding. Free FD calculator for Indian banks.">
+<link rel="canonical" href="https://tools.splitai.in/fd-calculator">
+<meta property="og:title" content="FD Calculator – Fixed Deposit Maturity Amount &amp; Interest"><meta property="og:description" content="Calculate fixed deposit maturity value and interest earned with quarterly, monthly or yearly compounding. Free FD calculator for Indian banks.">
+<meta property="og:url" content="https://tools.splitai.in/fd-calculator"><meta property="og:type" content="website"><meta property="og:site_name" content="SplitAI Tools">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/style.css">
+<script src="/common.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "FD Calculator", "url": "https://tools.splitai.in/fd-calculator", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "description": "Calculate fixed deposit maturity value and interest earned with quarterly, monthly or yearly compounding. Free FD calculator for Indian banks.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why is the effective yield higher than the rate?", "acceptedAnswer": {"@type": "Answer", "text": "Compounding earns interest on interest, so the actual yearly growth is a little higher than the quoted rate."}}, {"@type": "Question", "name": "Does this include TDS?", "acceptedAnswer": {"@type": "Answer", "text": "No. The result is the pre-tax maturity amount."}}, {"@type": "Question", "name": "Can I use it for RD?", "acceptedAnswer": {"@type": "Answer", "text": "No. Recurring deposits need a different formula, because you deposit money every month."}}]}</script>
+</head>
+<body data-slug="fd-calculator"><header class="top"><div class="wrap">
+<a class="logo" href="/"><span class="dot">₹</span>SplitAI Tools</a>
+<nav class="top"><a href="/#money" class="hide-sm">Money</a><a href="/#everyday" class="hide-sm">Everyday</a><a href="https://www.splitai.in/">Split app</a>
+<button class="theme-toggle" id="themeBtn" aria-label="Toggle dark mode">◐</button></nav></div></header>
+<main class="wrap">
+<div class="crumbs"><a href="/">Home</a> › Money &amp; Loans › FD Calculator</div>
+<div class="tool-head"><h1>💰 FD Calculator</h1><p>Work out the maturity amount and interest on a bank fixed deposit.</p></div>
+<div class="layout"><div>
+<section class="card">
+<div class="row">
+ <div class="field"><label for="p">Deposit amount (₹)</label><input id="p" type="number" inputmode="decimal" value="100000"></div>
+ <div class="field"><label for="r">Interest rate (% per year)</label><input id="r" type="number" inputmode="decimal" value="7" step="0.05"></div>
+</div>
+<div class="row">
+ <div class="field"><label for="t">Time period (years)</label><input id="t" type="number" inputmode="decimal" value="3" step="0.25"></div>
+ <div class="field"><label for="k">Compounding</label><select id="k"><option value="4">Quarterly (most banks)</option><option value="12">Monthly</option><option value="2">Half-yearly</option><option value="1">Yearly</option></select></div>
+</div>
+<div class="result" id="out"></div>
+</section>
+<p><button class="btn ghost" id="shareBtn">📤 Share this tool</button></p>
+<div class="ad"></div>
+<article class="prose">
+<h2>FD formula</h2>
+<p>Maturity A = P × (1 + r/k)<sup>k×t</sup>. Here P is the deposit, r is the annual rate, k is how many times a year interest compounds, and t is the time in years. Most Indian banks compound FD interest quarterly.</p>
+<p>FD interest is taxable according to your income slab, and banks may deduct TDS. Senior citizens usually get a higher rate.</p>
+<h2>Frequently asked questions</h2><details><summary>Why is the effective yield higher than the rate?</summary><p>Compounding earns interest on interest, so the actual yearly growth is a little higher than the quoted rate.</p></details><details><summary>Does this include TDS?</summary><p>No. The result is the pre-tax maturity amount.</p></details><details><summary>Can I use it for RD?</summary><p>No. Recurring deposits need a different formula, because you deposit money every month.</p></details></article>
+</div>
+<aside class="side">
+<div class="cta card"><h3>Split expenses with friends?</h3><p>SplitAI tracks group bills, who owes whom and UPI settle-ups. It's free.</p><a class="btn" href="https://www.splitai.in/">Try SplitAI →</a></div>
+<div class="ad"></div>
+<div class="card"><h3>More free tools</h3><a class="l" href="/emi-calculator">🏦 EMI Calculator</a><a class="l" href="/gst-calculator">🧮 GST Calculator</a><a class="l" href="/sip-calculator">📈 SIP Calculator</a><a class="l" href="/simple-compound-interest-calculator">➗ Simple &amp; Compound Interest</a><a class="l" href="/split-bill-calculator">🧾 Split Bill Calculator</a><a class="l" href="/trip-expense-splitter">✈️ Trip Expense Splitter</a><a class="l" href="/percentage-calculator">％ Percentage Calculator</a></div>
+</aside></div></main>
+<footer><div class="wrap cols">
+<div><b>SplitAI Tools</b><br>Free everyday calculators for India.<br>Made by <a href="https://www.splitai.in/">SplitAI</a>.</div>
+<div style="max-width:560px"><a href="/split-bill-calculator">Split Bill Calculator</a> <a href="/trip-expense-splitter">Trip Expense Splitter</a> <a href="/emi-calculator">EMI Calculator</a> <a href="/gst-calculator">GST Calculator</a> <a href="/sip-calculator">SIP Calculator</a> <a href="/fd-calculator">FD Calculator</a> <a href="/simple-compound-interest-calculator">Simple &amp; Compound Interest</a> <a href="/percentage-calculator">Percentage Calculator</a></div>
+<div><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms">Terms</a><a href="/contact">Contact</a></div>
+</div><div class="wrap" style="margin-top:14px">© 2026 SplitAI Tools. Results are estimates for information only.</div></footer>
+<script>
+live(()=>{
+ const P=num('p'),r=num('r')/100,t=num('t'),k=+$('#k').value,A=P*Math.pow(1+r/k,k*t);
+ $('#out').innerHTML='<div class="muted">Maturity amount</div><div class="big">'+inr(A)+'</div>'+
+  kv([['Deposit',inr(P)],['Interest earned',inr(A-P)],['Effective yearly yield',fmt((Math.pow(1+r/k,k)-1)*100)+'%']])+
+  bar([{v:P,c:'var(--brand)',label:'Deposit'},{v:A-P,c:'var(--brand-2)',label:'Interest'}]);
+});
+</script>
+</body></html>

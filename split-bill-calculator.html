@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-IN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Split Bill Calculator – Divide Restaurant Bill with Tip &amp; GST</title>
+<meta name="description" content="Free split bill calculator. Divide any restaurant or party bill between friends, with tip, service charge and GST. Instant per-person amount.">
+<link rel="canonical" href="https://tools.splitai.in/split-bill-calculator">
+<meta property="og:title" content="Split Bill Calculator – Divide Restaurant Bill with Tip &amp; GST"><meta property="og:description" content="Free split bill calculator. Divide any restaurant or party bill between friends, with tip, service charge and GST. Instant per-person amount.">
+<meta property="og:url" content="https://tools.splitai.in/split-bill-calculator"><meta property="og:type" content="website"><meta property="og:site_name" content="SplitAI Tools">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/style.css">
+<script src="/common.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Split Bill Calculator", "url": "https://tools.splitai.in/split-bill-calculator", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "description": "Free split bill calculator. Divide any restaurant or party bill between friends, with tip, service charge and GST. Instant per-person amount.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Should tip be calculated before or after tax?", "acceptedAnswer": {"@type": "Answer", "text": "Most people calculate tip on the pre-tax bill amount, which is what this calculator does."}}, {"@type": "Question", "name": "Can I split unequally?", "acceptedAnswer": {"@type": "Answer", "text": "This tool splits equally. For unequal payments, use the Trip Expense Splitter or the SplitAI app, which tracks who paid what."}}, {"@type": "Question", "name": "Is this calculator free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is completely free, works on mobile, and needs no sign-up."}}]}</script>
+</head>
+<body data-slug="split-bill-calculator"><header class="top"><div class="wrap">
+<a class="logo" href="/"><span class="dot">₹</span>SplitAI Tools</a>
+<nav class="top"><a href="/#money" class="hide-sm">Money</a><a href="/#everyday" class="hide-sm">Everyday</a><a href="https://www.splitai.in/">Split app</a>
+<button class="theme-toggle" id="themeBtn" aria-label="Toggle dark mode">◐</button></nav></div></header>
+<main class="wrap">
+<div class="crumbs"><a href="/">Home</a> › Split &amp; Share › Split Bill Calculator</div>
+<div class="tool-head"><h1>🧾 Split Bill Calculator</h1><p>Divide a restaurant, party or cab bill between friends, including tax and tip.</p></div>
+<div class="layout"><div>
+<section class="card">
+<div class="row">
+ <div class="field"><label for="amt">Bill amount (₹)</label><input id="amt" type="number" inputmode="decimal" value="2400"></div>
+ <div class="field"><label for="ppl">Number of people</label><input id="ppl" type="number" inputmode="numeric" value="4" min="1"></div>
+</div>
+<div class="row">
+ <div class="field"><label for="tax">Tax / service charge (%)</label><input id="tax" type="number" inputmode="decimal" value="5"></div>
+ <div class="field"><label for="tip">Tip (%)</label><input id="tip" type="number" inputmode="decimal" value="0"></div>
+</div>
+<label style="display:flex;gap:8px;align-items:center;font-weight:500"><input id="round" type="checkbox" style="width:auto"> Round up each share to the next ₹10</label>
+<div class="result" id="out"></div>
+<p style="margin-top:12px"><button class="btn ghost" id="shareRes">Share on WhatsApp</button></p>
+</section>
+<p><button class="btn ghost" id="shareBtn">📤 Share this tool</button></p>
+<div class="ad"></div>
+<article class="prose">
+<h2>How to split a bill</h2>
+<ol><li>Enter the bill amount before tax.</li><li>Add the tax or service charge percentage printed on the bill, if any.</li><li>Add a tip percentage if you want to tip.</li><li>Enter how many people are sharing. The per-person amount updates instantly.</li></ol>
+<h2>Formula</h2>
+<p>Per person = (Bill + Bill × Tax% + Bill × Tip%) ÷ Number of people.</p>
+<p>If different people paid different amounts (for example on a trip), use the <a href="/trip-expense-splitter">Trip Expense Splitter</a>. It tells you exactly who owes whom.</p>
+<h2>Frequently asked questions</h2><details><summary>Should tip be calculated before or after tax?</summary><p>Most people calculate tip on the pre-tax bill amount, which is what this calculator does.</p></details><details><summary>Can I split unequally?</summary><p>This tool splits equally. For unequal payments, use the Trip Expense Splitter or the SplitAI app, which tracks who paid what.</p></details><details><summary>Is this calculator free?</summary><p>Yes. It is completely free, works on mobile, and needs no sign-up.</p></details></article>
+</div>
+<aside class="side">
+<div class="cta card"><h3>Split expenses with friends?</h3><p>SplitAI tracks group bills, who owes whom and UPI settle-ups. It's free.</p><a class="btn" href="https://www.splitai.in/">Try SplitAI →</a></div>
+<div class="ad"></div>
+<div class="card"><h3>More free tools</h3><a class="l" href="/trip-expense-splitter">✈️ Trip Expense Splitter</a><a class="l" href="/daily-expense-tracker">📒 Daily Expense Tracker</a><a class="l" href="/fuel-cost-calculator">⛽ Fuel Cost Calculator</a><a class="l" href="/emi-calculator">🏦 EMI Calculator</a><a class="l" href="/gst-calculator">🧮 GST Calculator</a><a class="l" href="/sip-calculator">📈 SIP Calculator</a></div>
+</aside></div></main>
+<footer><div class="wrap cols">
+<div><b>SplitAI Tools</b><br>Free everyday calculators for India.<br>Made by <a href="https://www.splitai.in/">SplitAI</a>.</div>
+<div style="max-width:560px"><a href="/split-bill-calculator">Split Bill Calculator</a> <a href="/trip-expense-splitter">Trip Expense Splitter</a> <a href="/emi-calculator">EMI Calculator</a> <a href="/gst-calculator">GST Calculator</a> <a href="/sip-calculator">SIP Calculator</a> <a href="/fd-calculator">FD Calculator</a> <a href="/simple-compound-interest-calculator">Simple &amp; Compound Interest</a> <a href="/percentage-calculator">Percentage Calculator</a></div>
+<div><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms">Terms</a><a href="/contact">Contact</a></div>
+</div><div class="wrap" style="margin-top:14px">© 2026 SplitAI Tools. Results are estimates for information only.</div></footer>
+<script>
+function calc(){
+ const a=num('amt'),p=Math.max(1,Math.floor(num('ppl'))),t=a*num('tax')/100,tp=a*num('tip')/100,total=a+t+tp;
+ let each=total/p; if($('#round').checked) each=Math.ceil(each/10)*10;
+ $('#out').innerHTML='<div class="muted">Each person pays</div><div class="big">'+inr(each,2)+'</div>'+
+  kv([['Bill amount',inr(a,2)],['Tax / service',inr(t,2)],['Tip',inr(tp,2)],['Grand total',inr(total,2)],['People',p]]);
+ window._msg='Bill split: total '+inr(total,2)+' between '+p+' people = '+inr(each,2)+' each. Calculated on '+location.href;
+}
+live(calc); $('#round').addEventListener('change',calc);
+$('#shareRes').onclick=()=>window.open('https://wa.me/?text='+encodeURIComponent(window._msg),'_blank');
+</script>
+</body></html>

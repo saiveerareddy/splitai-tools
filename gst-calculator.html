@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-IN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GST Calculator – Add or Remove GST, CGST &amp; SGST Breakup</title>
+<meta name="description" content="Free GST calculator for India. Add GST to a price or remove GST from an inclusive amount. See CGST, SGST and IGST breakup instantly.">
+<link rel="canonical" href="https://tools.splitai.in/gst-calculator">
+<meta property="og:title" content="GST Calculator – Add or Remove GST, CGST &amp; SGST Breakup"><meta property="og:description" content="Free GST calculator for India. Add GST to a price or remove GST from an inclusive amount. See CGST, SGST and IGST breakup instantly.">
+<meta property="og:url" content="https://tools.splitai.in/gst-calculator"><meta property="og:type" content="website"><meta property="og:site_name" content="SplitAI Tools">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/style.css">
+<script src="/common.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "GST Calculator", "url": "https://tools.splitai.in/gst-calculator", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "description": "Free GST calculator for India. Add GST to a price or remove GST from an inclusive amount. See CGST, SGST and IGST breakup instantly.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the difference between CGST, SGST and IGST?", "acceptedAnswer": {"@type": "Answer", "text": "CGST goes to the Centre and SGST to the State for sales within one state. IGST applies to sales between states."}}, {"@type": "Question", "name": "How do I find GST from an MRP?", "acceptedAnswer": {"@type": "Answer", "text": "Choose 'Remove GST' and enter the MRP. The tool shows the base price and the GST included in it."}}, {"@type": "Question", "name": "Is this tool accurate for invoices?", "acceptedAnswer": {"@type": "Answer", "text": "It gives exact arithmetic. Your accountant should confirm the correct rate and HSN/SAC code."}}]}</script>
+</head>
+<body data-slug="gst-calculator"><header class="top"><div class="wrap">
+<a class="logo" href="/"><span class="dot">₹</span>SplitAI Tools</a>
+<nav class="top"><a href="/#money" class="hide-sm">Money</a><a href="/#everyday" class="hide-sm">Everyday</a><a href="https://www.splitai.in/">Split app</a>
+<button class="theme-toggle" id="themeBtn" aria-label="Toggle dark mode">◐</button></nav></div></header>
+<main class="wrap">
+<div class="crumbs"><a href="/">Home</a> › Money &amp; Loans › GST Calculator</div>
+<div class="tool-head"><h1>🧮 GST Calculator</h1><p>Add GST to a price, or work out the GST inside a GST-inclusive amount.</p></div>
+<div class="layout"><div>
+<section class="card">
+<div class="row">
+ <div class="field"><label for="a">Amount (₹)</label><input id="a" type="number" inputmode="decimal" value="1000"></div>
+ <div class="field"><label for="r">GST rate (%)</label><select id="r"><option>0.25</option><option>3</option><option selected>5</option><option>12</option><option>18</option><option>28</option><option>40</option></select></div>
+</div>
+<div class="field"><label for="m">Calculation</label><select id="m"><option value="add">Add GST (amount is before GST)</option><option value="rem">Remove GST (amount includes GST)</option></select></div>
+<div class="result" id="out"></div>
+</section>
+<p><button class="btn ghost" id="shareBtn">📤 Share this tool</button></p>
+<div class="ad"></div>
+<article class="prose">
+<h2>How GST is calculated</h2>
+<p><b>Adding GST:</b> GST = Amount × Rate ÷ 100, and Total = Amount + GST.</p>
+<p><b>Removing GST:</b> Base price = Inclusive amount × 100 ÷ (100 + Rate), and GST = Inclusive amount − Base price.</p>
+<p>Within a state, GST is split equally into CGST and SGST. For sales between states, the full amount is charged as IGST.</p>
+<p>GST rates change from time to time, so always confirm the current rate for your product or service on the official GST portal.</p>
+<h2>Frequently asked questions</h2><details><summary>What is the difference between CGST, SGST and IGST?</summary><p>CGST goes to the Centre and SGST to the State for sales within one state. IGST applies to sales between states.</p></details><details><summary>How do I find GST from an MRP?</summary><p>Choose &#x27;Remove GST&#x27; and enter the MRP. The tool shows the base price and the GST included in it.</p></details><details><summary>Is this tool accurate for invoices?</summary><p>It gives exact arithmetic. Your accountant should confirm the correct rate and HSN/SAC code.</p></details></article>
+</div>
+<aside class="side">
+<div class="cta card"><h3>Split expenses with friends?</h3><p>SplitAI tracks group bills, who owes whom and UPI settle-ups. It's free.</p><a class="btn" href="https://www.splitai.in/">Try SplitAI →</a></div>
+<div class="ad"></div>
+<div class="card"><h3>More free tools</h3><a class="l" href="/emi-calculator">🏦 EMI Calculator</a><a class="l" href="/sip-calculator">📈 SIP Calculator</a><a class="l" href="/fd-calculator">💰 FD Calculator</a><a class="l" href="/simple-compound-interest-calculator">➗ Simple &amp; Compound Interest</a><a class="l" href="/split-bill-calculator">🧾 Split Bill Calculator</a><a class="l" href="/trip-expense-splitter">✈️ Trip Expense Splitter</a><a class="l" href="/percentage-calculator">％ Percentage Calculator</a></div>
+</aside></div></main>
+<footer><div class="wrap cols">
+<div><b>SplitAI Tools</b><br>Free everyday calculators for India.<br>Made by <a href="https://www.splitai.in/">SplitAI</a>.</div>
+<div style="max-width:560px"><a href="/split-bill-calculator">Split Bill Calculator</a> <a href="/trip-expense-splitter">Trip Expense Splitter</a> <a href="/emi-calculator">EMI Calculator</a> <a href="/gst-calculator">GST Calculator</a> <a href="/sip-calculator">SIP Calculator</a> <a href="/fd-calculator">FD Calculator</a> <a href="/simple-compound-interest-calculator">Simple &amp; Compound Interest</a> <a href="/percentage-calculator">Percentage Calculator</a></div>
+<div><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms">Terms</a><a href="/contact">Contact</a></div>
+</div><div class="wrap" style="margin-top:14px">© 2026 SplitAI Tools. Results are estimates for information only.</div></footer>
+<script>
+live(()=>{
+ const a=num('a'),r=+$('#r').value;let base,g;
+ if($('#m').value==='add'){base=a;g=a*r/100;}else{base=a*100/(100+r);g=a-base;}
+ $('#out').innerHTML='<div class="muted">Total with GST</div><div class="big">'+inr(base+g,2)+'</div>'+
+  kv([['Amount before GST',inr(base,2)],['GST @ '+r+'%',inr(g,2)],['CGST ('+r/2+'%)',inr(g/2,2)],['SGST ('+r/2+'%)',inr(g/2,2)],['IGST (inter-state)',inr(g,2)]]);
+});
+</script>
+</body></html>

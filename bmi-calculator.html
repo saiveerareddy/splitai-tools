@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-IN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BMI Calculator – Body Mass Index with Healthy Weight Range</title>
+<meta name="description" content="Calculate your BMI from height and weight in cm/kg or feet/inches. See your category and the healthy weight range for your height.">
+<link rel="canonical" href="https://tools.splitai.in/bmi-calculator">
+<meta property="og:title" content="BMI Calculator – Body Mass Index with Healthy Weight Range"><meta property="og:description" content="Calculate your BMI from height and weight in cm/kg or feet/inches. See your category and the healthy weight range for your height.">
+<meta property="og:url" content="https://tools.splitai.in/bmi-calculator"><meta property="og:type" content="website"><meta property="og:site_name" content="SplitAI Tools">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/style.css">
+<script src="/common.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "BMI Calculator", "url": "https://tools.splitai.in/bmi-calculator", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "description": "Calculate your BMI from height and weight in cm/kg or feet/inches. See your category and the healthy weight range for your height.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is BMI accurate for athletes?", "acceptedAnswer": {"@type": "Answer", "text": "Not always. Muscular people can have a high BMI without excess fat."}}, {"@type": "Question", "name": "Can children use this?", "acceptedAnswer": {"@type": "Answer", "text": "No. Children need age- and sex-specific BMI percentile charts."}}]}</script>
+</head>
+<body data-slug="bmi-calculator"><header class="top"><div class="wrap">
+<a class="logo" href="/"><span class="dot">₹</span>SplitAI Tools</a>
+<nav class="top"><a href="/#money" class="hide-sm">Money</a><a href="/#everyday" class="hide-sm">Everyday</a><a href="https://www.splitai.in/">Split app</a>
+<button class="theme-toggle" id="themeBtn" aria-label="Toggle dark mode">◐</button></nav></div></header>
+<main class="wrap">
+<div class="crumbs"><a href="/">Home</a> › Health &amp; Home › BMI Calculator</div>
+<div class="tool-head"><h1>⚖️ BMI Calculator</h1><p>Check your Body Mass Index and the healthy weight range for your height.</p></div>
+<div class="layout"><div>
+<section class="card">
+<div class="row">
+ <div class="field"><label for="u">Height in</label><select id="u"><option value="cm">Centimetres</option><option value="ft">Feet & inches</option></select></div>
+ <div class="field"><label for="w">Weight (kg)</label><input id="w" type="number" inputmode="decimal" value="68"></div>
+</div>
+<div class="row" id="hcm"><div class="field"><label for="h">Height (cm)</label><input id="h" type="number" inputmode="decimal" value="170"></div></div>
+<div class="row" id="hft" hidden><div class="field"><label for="f">Feet</label><input id="f" type="number" inputmode="numeric" value="5"></div><div class="field"><label for="i">Inches</label><input id="i" type="number" inputmode="decimal" value="7"></div></div>
+<div class="result" id="out"></div>
+</section>
+<p><button class="btn ghost" id="shareBtn">📤 Share this tool</button></p>
+<div class="ad"></div>
+<article class="prose">
+<h2>BMI categories (WHO)</h2>
+<ul><li>Below 18.5: underweight</li><li>18.5 – 24.9: normal</li><li>25 – 29.9: overweight</li><li>30 and above: obese</li></ul>
+<p>Many health bodies suggest lower cut-offs for South Asian adults (overweight from 23, obese from 25), because health risks rise at lower BMIs. BMI does not account for muscle mass, age or body shape. It is a screening tool, not a diagnosis. Talk to a doctor about your health.</p>
+<h2>Frequently asked questions</h2><details><summary>Is BMI accurate for athletes?</summary><p>Not always. Muscular people can have a high BMI without excess fat.</p></details><details><summary>Can children use this?</summary><p>No. Children need age- and sex-specific BMI percentile charts.</p></details></article>
+</div>
+<aside class="side">
+<div class="cta card"><h3>Split expenses with friends?</h3><p>SplitAI tracks group bills, who owes whom and UPI settle-ups. It's free.</p><a class="btn" href="https://www.splitai.in/">Try SplitAI →</a></div>
+<div class="ad"></div>
+<div class="card"><h3>More free tools</h3><a class="l" href="/electricity-bill-calculator">⚡ Electricity Bill Calculator</a><a class="l" href="/split-bill-calculator">🧾 Split Bill Calculator</a><a class="l" href="/trip-expense-splitter">✈️ Trip Expense Splitter</a><a class="l" href="/emi-calculator">🏦 EMI Calculator</a></div>
+</aside></div></main>
+<footer><div class="wrap cols">
+<div><b>SplitAI Tools</b><br>Free everyday calculators for India.<br>Made by <a href="https://www.splitai.in/">SplitAI</a>.</div>
+<div style="max-width:560px"><a href="/split-bill-calculator">Split Bill Calculator</a> <a href="/trip-expense-splitter">Trip Expense Splitter</a> <a href="/emi-calculator">EMI Calculator</a> <a href="/gst-calculator">GST Calculator</a> <a href="/sip-calculator">SIP Calculator</a> <a href="/fd-calculator">FD Calculator</a> <a href="/simple-compound-interest-calculator">Simple &amp; Compound Interest</a> <a href="/percentage-calculator">Percentage Calculator</a></div>
+<div><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms">Terms</a><a href="/contact">Contact</a></div>
+</div><div class="wrap" style="margin-top:14px">© 2026 SplitAI Tools. Results are estimates for information only.</div></footer>
+<script>
+live(()=>{
+ const ft=$('#u').value==='ft';$('#hcm').hidden=ft;$('#hft').hidden=!ft;
+ const h=(ft?(num('f')*12+num('i'))*2.54:num('h'))/100,w=num('w');if(!h||!w){$('#out').innerHTML='Enter height and weight.';return;}
+ const b=w/(h*h),c=b<18.5?['Underweight','warn']:b<25?['Normal weight','ok']:b<30?['Overweight','warn']:['Obese','warn'];
+ $('#out').innerHTML='<div class="muted">Your BMI</div><div class="big">'+fmt(b,1)+'</div><p class="'+c[1]+'" style="margin:4px 0 8px;font-weight:700">'+c[0]+'</p>'+
+  kv([['Healthy weight for your height',fmt(18.5*h*h,1)+' – '+fmt(24.9*h*h,1)+' kg'],['Asian cut-off: overweight from','BMI 23']]);
+});
+</script>
+</body></html>

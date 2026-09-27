@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-IN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Word Counter – Count Words, Characters &amp; Reading Time</title>
+<meta name="description" content="Free online word counter. Count words, characters (with and without spaces), sentences and paragraphs, and estimate reading time.">
+<link rel="canonical" href="https://tools.splitai.in/word-counter">
+<meta property="og:title" content="Word Counter – Count Words, Characters &amp; Reading Time"><meta property="og:description" content="Free online word counter. Count words, characters (with and without spaces), sentences and paragraphs, and estimate reading time.">
+<meta property="og:url" content="https://tools.splitai.in/word-counter"><meta property="og:type" content="website"><meta property="og:site_name" content="SplitAI Tools">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/style.css">
+<script src="/common.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Word Counter", "url": "https://tools.splitai.in/word-counter", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "description": "Free online word counter. Count words, characters (with and without spaces), sentences and paragraphs, and estimate reading time.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does it work for Hindi, Telugu and other languages?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Words are counted by the spaces between them, which works for most Indian languages."}}]}</script>
+</head>
+<body data-slug="word-counter"><header class="top"><div class="wrap">
+<a class="logo" href="/"><span class="dot">₹</span>SplitAI Tools</a>
+<nav class="top"><a href="/#money" class="hide-sm">Money</a><a href="/#everyday" class="hide-sm">Everyday</a><a href="https://www.splitai.in/">Split app</a>
+<button class="theme-toggle" id="themeBtn" aria-label="Toggle dark mode">◐</button></nav></div></header>
+<main class="wrap">
+<div class="crumbs"><a href="/">Home</a> › Everyday › Word Counter</div>
+<div class="tool-head"><h1>🔤 Word Counter</h1><p>Paste or type text to count words, characters, sentences and reading time.</p></div>
+<div class="layout"><div>
+<section class="card">
+<div class="field"><label for="t">Your text</label><textarea id="t" rows="9" placeholder="Start typing or paste your text here…"></textarea></div>
+<div class="result" id="out"></div>
+<p><button class="btn ghost" id="cp">Copy text</button> <button class="btn ghost" id="cl">Clear</button></p>
+</section>
+<p><button class="btn ghost" id="shareBtn">📤 Share this tool</button></p>
+<div class="ad"></div>
+<article class="prose">
+<h2>Useful limits to know</h2>
+<ul><li>Instagram caption: 2,200 characters</li><li>X (Twitter) post: 280 characters for standard accounts</li><li>Meta description for Google: roughly 150–160 characters</li></ul>
+<p>Reading time assumes about 200 words per minute. Your text is never uploaded; it stays in your browser.</p>
+<h2>Frequently asked questions</h2><details><summary>Does it work for Hindi, Telugu and other languages?</summary><p>Yes. Words are counted by the spaces between them, which works for most Indian languages.</p></details></article>
+</div>
+<aside class="side">
+<div class="cta card"><h3>Split expenses with friends?</h3><p>SplitAI tracks group bills, who owes whom and UPI settle-ups. It's free.</p><a class="btn" href="https://www.splitai.in/">Try SplitAI →</a></div>
+<div class="ad"></div>
+<div class="card"><h3>More free tools</h3><a class="l" href="/percentage-calculator">％ Percentage Calculator</a><a class="l" href="/discount-calculator">🏷️ Discount Calculator</a><a class="l" href="/age-calculator">🎂 Age Calculator</a><a class="l" href="/days-between-dates">📅 Days Between Dates</a><a class="l" href="/unit-converter">📏 Unit Converter</a><a class="l" href="/split-bill-calculator">🧾 Split Bill Calculator</a><a class="l" href="/trip-expense-splitter">✈️ Trip Expense Splitter</a><a class="l" href="/emi-calculator">🏦 EMI Calculator</a></div>
+</aside></div></main>
+<footer><div class="wrap cols">
+<div><b>SplitAI Tools</b><br>Free everyday calculators for India.<br>Made by <a href="https://www.splitai.in/">SplitAI</a>.</div>
+<div style="max-width:560px"><a href="/split-bill-calculator">Split Bill Calculator</a> <a href="/trip-expense-splitter">Trip Expense Splitter</a> <a href="/emi-calculator">EMI Calculator</a> <a href="/gst-calculator">GST Calculator</a> <a href="/sip-calculator">SIP Calculator</a> <a href="/fd-calculator">FD Calculator</a> <a href="/simple-compound-interest-calculator">Simple &amp; Compound Interest</a> <a href="/percentage-calculator">Percentage Calculator</a></div>
+<div><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms">Terms</a><a href="/contact">Contact</a></div>
+</div><div class="wrap" style="margin-top:14px">© 2026 SplitAI Tools. Results are estimates for information only.</div></footer>
+<script>
+live(()=>{const s=$('#t').value,w=(s.trim().match(/\S+/g)||[]).length;
+ $('#out').innerHTML='<div class="row"><div><div class="muted">Words</div><div class="big">'+fmt(w,0)+'</div></div><div><div class="muted">Characters</div><div class="big">'+fmt(s.length,0)+'</div></div></div>'+
+ kv([['Characters (no spaces)',fmt(s.replace(/\s/g,'').length,0)],['Sentences',(s.match(/[^.!?]+[.!?]+/g)||[]).length+(s.trim()&&!/[.!?]\s*$/.test(s)?1:0)],['Paragraphs',s.split(/\n\s*\n/).filter(p=>p.trim()).length],['Reading time',Math.max(1,Math.ceil(w/200))+' min']]);});
+$('#cp').onclick=()=>navigator.clipboard&&navigator.clipboard.writeText($('#t').value);$('#cl').onclick=()=>{$('#t').value='';$('#t').dispatchEvent(new Event('input'));};
+</script>
+</body></html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-IN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Days Between Dates Calculator – Count Days, Weeks &amp; Working Days</title>
+<meta name="description" content="Count the number of days, weeks and working days (Mon–Fri) between two dates. Useful for notice periods, leave, rent and deadlines.">
+<link rel="canonical" href="https://tools.splitai.in/days-between-dates">
+<meta property="og:title" content="Days Between Dates Calculator – Count Days, Weeks &amp; Working Days"><meta property="og:description" content="Count the number of days, weeks and working days (Mon–Fri) between two dates. Useful for notice periods, leave, rent and deadlines.">
+<meta property="og:url" content="https://tools.splitai.in/days-between-dates"><meta property="og:type" content="website"><meta property="og:site_name" content="SplitAI Tools">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/style.css">
+<script src="/common.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Days Between Dates", "url": "https://tools.splitai.in/days-between-dates", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "description": "Count the number of days, weeks and working days (Mon\u2013Fri) between two dates. Useful for notice periods, leave, rent and deadlines.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Should I include the end date?", "acceptedAnswer": {"@type": "Answer", "text": "If both the first and last days count (as with leave), tick 'Include the end date'."}}]}</script>
+</head>
+<body data-slug="days-between-dates"><header class="top"><div class="wrap">
+<a class="logo" href="/"><span class="dot">₹</span>SplitAI Tools</a>
+<nav class="top"><a href="/#money" class="hide-sm">Money</a><a href="/#everyday" class="hide-sm">Everyday</a><a href="https://www.splitai.in/">Split app</a>
+<button class="theme-toggle" id="themeBtn" aria-label="Toggle dark mode">◐</button></nav></div></header>
+<main class="wrap">
+<div class="crumbs"><a href="/">Home</a> › Everyday › Days Between Dates</div>
+<div class="tool-head"><h1>📅 Days Between Dates</h1><p>Count the days, weeks and working days between any two dates.</p></div>
+<div class="layout"><div>
+<section class="card">
+<div class="row">
+ <div class="field"><label for="a">Start date</label><input id="a" type="date"></div>
+ <div class="field"><label for="b">End date</label><input id="b" type="date"></div>
+</div>
+<label style="display:flex;gap:8px;align-items:center;font-weight:500"><input id="inc" type="checkbox" style="width:auto"> Include the end date</label>
+<div class="result" id="out"></div>
+</section>
+<p><button class="btn ghost" id="shareBtn">📤 Share this tool</button></p>
+<div class="ad"></div>
+<article class="prose">
+<h2>Common uses</h2>
+<ul><li>Counting a notice period or leave days</li><li>Rent, subscription or loan period calculations</li><li>Project deadlines and countdowns</li></ul>
+<p>Working days here exclude Saturdays and Sundays. Public holidays are not excluded, because they vary by state and company.</p>
+<h2>Frequently asked questions</h2><details><summary>Should I include the end date?</summary><p>If both the first and last days count (as with leave), tick &#x27;Include the end date&#x27;.</p></details></article>
+</div>
+<aside class="side">
+<div class="cta card"><h3>Split expenses with friends?</h3><p>SplitAI tracks group bills, who owes whom and UPI settle-ups. It's free.</p><a class="btn" href="https://www.splitai.in/">Try SplitAI →</a></div>
+<div class="ad"></div>
+<div class="card"><h3>More free tools</h3><a class="l" href="/percentage-calculator">％ Percentage Calculator</a><a class="l" href="/discount-calculator">🏷️ Discount Calculator</a><a class="l" href="/age-calculator">🎂 Age Calculator</a><a class="l" href="/unit-converter">📏 Unit Converter</a><a class="l" href="/word-counter">🔤 Word Counter</a><a class="l" href="/split-bill-calculator">🧾 Split Bill Calculator</a><a class="l" href="/trip-expense-splitter">✈️ Trip Expense Splitter</a><a class="l" href="/emi-calculator">🏦 EMI Calculator</a></div>
+</aside></div></main>
+<footer><div class="wrap cols">
+<div><b>SplitAI Tools</b><br>Free everyday calculators for India.<br>Made by <a href="https://www.splitai.in/">SplitAI</a>.</div>
+<div style="max-width:560px"><a href="/split-bill-calculator">Split Bill Calculator</a> <a href="/trip-expense-splitter">Trip Expense Splitter</a> <a href="/emi-calculator">EMI Calculator</a> <a href="/gst-calculator">GST Calculator</a> <a href="/sip-calculator">SIP Calculator</a> <a href="/fd-calculator">FD Calculator</a> <a href="/simple-compound-interest-calculator">Simple &amp; Compound Interest</a> <a href="/percentage-calculator">Percentage Calculator</a></div>
+<div><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms">Terms</a><a href="/contact">Contact</a></div>
+</div><div class="wrap" style="margin-top:14px">© 2026 SplitAI Tools. Results are estimates for information only.</div></footer>
+<script>
+{const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());$('#a').value=d.toISOString().slice(0,10);d.setDate(d.getDate()+90);$('#b').value=d.toISOString().slice(0,10);}
+function calc(){const a=new Date($('#a').value+'T00:00'),b=new Date($('#b').value+'T00:00');if(isNaN(a)||isNaN(b)){$('#out').innerHTML='Pick two dates.';return;}
+ const s=a<b?a:b,e=a<b?b:a;let n=Math.round((e-s)/864e5)+($('#inc').checked?1:0),w=0;const c=new Date(s);
+ for(let i=0;i<n;i++){const g=c.getDay();if(g&&g<6)w++;c.setDate(c.getDate()+1);}
+ $('#out').innerHTML='<div class="muted">Difference</div><div class="big">'+fmt(n,0)+' days</div>'+kv([['Weeks',Math.floor(n/7)+' weeks '+(n%7)+' days'],['Working days (Mon–Fri)',fmt(w,0)],['Weekend days',fmt(n-w,0)],['Approx. months',fmt(n/30.4375,1)]]);}
+live(calc);$('#inc').addEventListener('change',calc);
+</script>
+</body></html>

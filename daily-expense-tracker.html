@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-IN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Expense Tracker – Free Online Money Manager (No Sign-up)</title>
+<meta name="description" content="Track your daily expenses for free. Add spending by category, see today&#x27;s and this month&#x27;s totals, and export to CSV. Private: data stays on your phone.">
+<link rel="canonical" href="https://tools.splitai.in/daily-expense-tracker">
+<meta property="og:title" content="Daily Expense Tracker – Free Online Money Manager (No Sign-up)"><meta property="og:description" content="Track your daily expenses for free. Add spending by category, see today&#x27;s and this month&#x27;s totals, and export to CSV. Private: data stays on your phone.">
+<meta property="og:url" content="https://tools.splitai.in/daily-expense-tracker"><meta property="og:type" content="website"><meta property="og:site_name" content="SplitAI Tools">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/style.css">
+<script src="/common.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Daily Expense Tracker", "url": "https://tools.splitai.in/daily-expense-tracker", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "description": "Track your daily expenses for free. Add spending by category, see today's and this month's totals, and export to CSV. Private: data stays on your phone.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where is my data saved?", "acceptedAnswer": {"@type": "Answer", "text": "Only in your browser on this device. Nothing is uploaded. Clearing your browser data will delete it, so export a CSV regularly."}}, {"@type": "Question", "name": "Is it really free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, with no sign-up and no limits."}}, {"@type": "Question", "name": "Can I use it on my phone?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is designed for mobile. Add it to your home screen for quick daily use."}}]}</script>
+</head>
+<body data-slug="daily-expense-tracker"><header class="top"><div class="wrap">
+<a class="logo" href="/"><span class="dot">₹</span>SplitAI Tools</a>
+<nav class="top"><a href="/#money" class="hide-sm">Money</a><a href="/#everyday" class="hide-sm">Everyday</a><a href="https://www.splitai.in/">Split app</a>
+<button class="theme-toggle" id="themeBtn" aria-label="Toggle dark mode">◐</button></nav></div></header>
+<main class="wrap">
+<div class="crumbs"><a href="/">Home</a> › Split &amp; Share › Daily Expense Tracker</div>
+<div class="tool-head"><h1>📒 Daily Expense Tracker</h1><p>Log your spending in seconds each day. Everything stays private on your device.</p></div>
+<div class="layout"><div>
+<section class="card">
+<div class="row">
+ <div class="field"><label for="amt">Amount (₹)</label><input id="amt" type="number" inputmode="decimal" placeholder="e.g. 120"></div>
+ <div class="field"><label for="cat">Category</label><select id="cat"><option>🍔 Food</option><option>🛒 Groceries</option><option>🚕 Travel</option><option>⛽ Fuel</option><option>🧾 Bills</option><option>🛍️ Shopping</option><option>🏠 Rent</option><option>💊 Health</option><option>🎬 Fun</option><option>📚 Education</option><option>📦 Other</option></select></div>
+</div>
+<div class="row">
+ <div class="field"><label for="note">Note (optional)</label><input id="note" placeholder="e.g. Lunch with team"></div>
+ <div class="field"><label for="dt">Date</label><input id="dt" type="date"></div>
+</div>
+<button class="btn" id="add">Add expense</button>
+<div class="result" id="sum"></div>
+<div class="row" style="margin-top:14px;align-items:end">
+ <div class="field"><label for="mon">Month</label><input id="mon" type="month"></div>
+ <div class="field"><label for="bud">Monthly budget (₹)</label><input id="bud" type="number" inputmode="decimal" placeholder="optional"></div>
+</div>
+<div class="list" id="list"></div>
+<p><button class="btn ghost" id="csv">Export CSV</button></p>
+</section>
+<p><button class="btn ghost" id="shareBtn">📤 Share this tool</button></p>
+<div class="ad"></div>
+<article class="prose">
+<h2>Why track daily expenses?</h2>
+<p>Small daily spends like tea, snacks, cab rides and online orders add up quickly. Logging each one takes about five seconds and shows where your money really goes each month.</p>
+<h2>Tips</h2>
+<ul><li>Add this page to your home screen: open your browser menu and tap "Add to Home screen".</li><li>Set a monthly budget to see how much is left.</li><li>Export to CSV any time to open your data in Excel or Google Sheets.</li></ul>
+<p>Sharing costs with flatmates or friends? <a href="https://www.splitai.in/">SplitAI</a> tracks group expenses and who owes whom.</p>
+<h2>Frequently asked questions</h2><details><summary>Where is my data saved?</summary><p>Only in your browser on this device. Nothing is uploaded. Clearing your browser data will delete it, so export a CSV regularly.</p></details><details><summary>Is it really free?</summary><p>Yes, with no sign-up and no limits.</p></details><details><summary>Can I use it on my phone?</summary><p>Yes. It is designed for mobile. Add it to your home screen for quick daily use.</p></details></article>
+</div>
+<aside class="side">
+<div class="cta card"><h3>Split expenses with friends?</h3><p>SplitAI tracks group bills, who owes whom and UPI settle-ups. It's free.</p><a class="btn" href="https://www.splitai.in/">Try SplitAI →</a></div>
+<div class="ad"></div>
+<div class="card"><h3>More free tools</h3><a class="l" href="/split-bill-calculator">🧾 Split Bill Calculator</a><a class="l" href="/trip-expense-splitter">✈️ Trip Expense Splitter</a><a class="l" href="/fuel-cost-calculator">⛽ Fuel Cost Calculator</a><a class="l" href="/emi-calculator">🏦 EMI Calculator</a><a class="l" href="/gst-calculator">🧮 GST Calculator</a><a class="l" href="/sip-calculator">📈 SIP Calculator</a></div>
+</aside></div></main>
+<footer><div class="wrap cols">
+<div><b>SplitAI Tools</b><br>Free everyday calculators for India.<br>Made by <a href="https://www.splitai.in/">SplitAI</a>.</div>
+<div style="max-width:560px"><a href="/split-bill-calculator">Split Bill Calculator</a> <a href="/trip-expense-splitter">Trip Expense Splitter</a> <a href="/emi-calculator">EMI Calculator</a> <a href="/gst-calculator">GST Calculator</a> <a href="/sip-calculator">SIP Calculator</a> <a href="/fd-calculator">FD Calculator</a> <a href="/simple-compound-interest-calculator">Simple &amp; Compound Interest</a> <a href="/percentage-calculator">Percentage Calculator</a></div>
+<div><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms">Terms</a><a href="/contact">Contact</a></div>
+</div><div class="wrap" style="margin-top:14px">© 2026 SplitAI Tools. Results are estimates for information only.</div></footer>
+<script>
+const today=()=>{const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());return d.toISOString().slice(0,10);};
+let E=store.get('exp',[]);$('#dt').value=today();$('#mon').value=today().slice(0,7);$('#bud').value=store.get('bud','')||'';
+function draw(){
+ store.set('exp',E);const m=$('#mon').value,t=today(),ME=E.filter(e=>e.d.startsWith(m)).sort((a,b)=>b.d.localeCompare(a.d)||b.id-a.id);
+ const tot=ME.reduce((s,e)=>s+e.a,0),td=E.filter(e=>e.d===t).reduce((s,e)=>s+e.a,0),bud=parseFloat($('#bud').value)||0;
+ const by={};ME.forEach(e=>by[e.c]=(by[e.c]||0)+e.a);
+ const cols=['#4f46e5','#0ea5a4','#f59e0b','#ef4444','#8b5cf6','#10b981','#ec4899','#3b82f6','#84cc16','#f97316','#64748b'];
+ const parts=Object.entries(by).sort((a,b)=>b[1]-a[1]).map(([k,v],i)=>({v,c:cols[i%cols.length],label:k+' '+inr(v)}));
+ $('#sum').innerHTML='<div class="row"><div><div class="muted">Today</div><div class="big">'+inr(td)+'</div></div><div><div class="muted">This month</div><div class="big">'+inr(tot)+'</div></div></div>'+
+  (bud?'<p class="'+(tot>bud?'warn':'ok')+'" style="margin:8px 0 0">'+(tot>bud?'Over budget by '+inr(tot-bud):inr(bud-tot)+' left in budget')+'</p>':'')+(parts.length?bar(parts):'');
+ $('#list').innerHTML=ME.length?ME.map(e=>`<div class="it"><div>${e.c} <b>${inr(e.a,2)}</b><br><small>${e.d}${e.n?' · '+e.n.replace(/</g,'&lt;'):''}</small></div><button class="x" data-id="${e.id}" aria-label="Delete">✕</button></div>`).join(''):'<p class="muted">No expenses this month yet.</p>';
+ $$('#list [data-id]').forEach(b=>b.onclick=()=>{if(confirm('Delete this expense?')){E=E.filter(e=>e.id!=b.dataset.id);draw();}});
+}
+$('#add').onclick=()=>{const a=parseFloat($('#amt').value);if(!a||a<=0){$('#amt').focus();return;}
+ E.push({id:Date.now(),a,c:$('#cat').value,n:$('#note').value.trim(),d:$('#dt').value||today()});$('#amt').value='';$('#note').value='';draw();$('#amt').focus();};
+$('#mon').oninput=draw;$('#bud').oninput=()=>{store.set('bud',$('#bud').value);draw();};
+$('#csv').onclick=()=>{const rows=[['Date','Category','Amount','Note'],...E.map(e=>[e.d,e.c.replace(/^\S+ /,''),e.a,'"'+(e.n||'').replace(/"/g,'""')+'"'])];
+ const b=new Blob([rows.map(r=>r.join(',')).join('\n')],{type:'text/csv'}),u=URL.createObjectURL(b),l=document.createElement('a');l.href=u;l.download='expenses.csv';l.click();};
+draw();
+</script>
+</body></html>

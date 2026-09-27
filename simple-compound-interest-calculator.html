@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-IN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Simple Interest &amp; Compound Interest Calculator</title>
+<meta name="description" content="Calculate simple interest and compound interest side by side. Useful for personal loans, money lent to friends, and school maths.">
+<link rel="canonical" href="https://tools.splitai.in/simple-compound-interest-calculator">
+<meta property="og:title" content="Simple Interest &amp; Compound Interest Calculator"><meta property="og:description" content="Calculate simple interest and compound interest side by side. Useful for personal loans, money lent to friends, and school maths.">
+<meta property="og:url" content="https://tools.splitai.in/simple-compound-interest-calculator"><meta property="og:type" content="website"><meta property="og:site_name" content="SplitAI Tools">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/style.css">
+<script src="/common.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Simple & Compound Interest", "url": "https://tools.splitai.in/simple-compound-interest-calculator", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "description": "Calculate simple interest and compound interest side by side. Useful for personal loans, money lent to friends, and school maths.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which is higher, SI or CI?", "acceptedAnswer": {"@type": "Answer", "text": "For the same rate and a period longer than one compounding cycle, compound interest is always higher."}}, {"@type": "Question", "name": "What is 2 rupees interest per month?", "acceptedAnswer": {"@type": "Answer", "text": "'2 rupees per hundred per month' means 2% a month, or 24% a year simple interest. Enter 24 as the rate."}}]}</script>
+</head>
+<body data-slug="simple-compound-interest-calculator"><header class="top"><div class="wrap">
+<a class="logo" href="/"><span class="dot">₹</span>SplitAI Tools</a>
+<nav class="top"><a href="/#money" class="hide-sm">Money</a><a href="/#everyday" class="hide-sm">Everyday</a><a href="https://www.splitai.in/">Split app</a>
+<button class="theme-toggle" id="themeBtn" aria-label="Toggle dark mode">◐</button></nav></div></header>
+<main class="wrap">
+<div class="crumbs"><a href="/">Home</a> › Money &amp; Loans › Simple &amp; Compound Interest</div>
+<div class="tool-head"><h1>➗ Simple &amp; Compound Interest</h1><p>Compare simple and compound interest side by side for any amount.</p></div>
+<div class="layout"><div>
+<section class="card">
+<div class="row">
+ <div class="field"><label for="p">Principal (₹)</label><input id="p" type="number" inputmode="decimal" value="50000"></div>
+ <div class="field"><label for="r">Rate (% per year)</label><input id="r" type="number" inputmode="decimal" value="10"></div>
+</div>
+<div class="row">
+ <div class="field"><label for="t">Time (years)</label><input id="t" type="number" inputmode="decimal" value="2"></div>
+ <div class="field"><label for="k">Compounding</label><select id="k"><option value="1">Yearly</option><option value="2">Half-yearly</option><option value="4">Quarterly</option><option value="12">Monthly</option></select></div>
+</div>
+<div class="result" id="out"></div>
+</section>
+<p><button class="btn ghost" id="shareBtn">📤 Share this tool</button></p>
+<div class="ad"></div>
+<article class="prose">
+<h2>Formulas</h2>
+<p><b>Simple interest</b> = P × R × T ÷ 100. Interest is charged only on the original principal.</p>
+<p><b>Compound interest</b> = P × (1 + R/(100k))<sup>k×T</sup> − P. Interest is added to the principal and then earns interest itself.</p>
+<h2>Frequently asked questions</h2><details><summary>Which is higher, SI or CI?</summary><p>For the same rate and a period longer than one compounding cycle, compound interest is always higher.</p></details><details><summary>What is 2 rupees interest per month?</summary><p>&#x27;2 rupees per hundred per month&#x27; means 2% a month, or 24% a year simple interest. Enter 24 as the rate.</p></details></article>
+</div>
+<aside class="side">
+<div class="cta card"><h3>Split expenses with friends?</h3><p>SplitAI tracks group bills, who owes whom and UPI settle-ups. It's free.</p><a class="btn" href="https://www.splitai.in/">Try SplitAI →</a></div>
+<div class="ad"></div>
+<div class="card"><h3>More free tools</h3><a class="l" href="/emi-calculator">🏦 EMI Calculator</a><a class="l" href="/gst-calculator">🧮 GST Calculator</a><a class="l" href="/sip-calculator">📈 SIP Calculator</a><a class="l" href="/fd-calculator">💰 FD Calculator</a><a class="l" href="/split-bill-calculator">🧾 Split Bill Calculator</a><a class="l" href="/trip-expense-splitter">✈️ Trip Expense Splitter</a><a class="l" href="/percentage-calculator">％ Percentage Calculator</a></div>
+</aside></div></main>
+<footer><div class="wrap cols">
+<div><b>SplitAI Tools</b><br>Free everyday calculators for India.<br>Made by <a href="https://www.splitai.in/">SplitAI</a>.</div>
+<div style="max-width:560px"><a href="/split-bill-calculator">Split Bill Calculator</a> <a href="/trip-expense-splitter">Trip Expense Splitter</a> <a href="/emi-calculator">EMI Calculator</a> <a href="/gst-calculator">GST Calculator</a> <a href="/sip-calculator">SIP Calculator</a> <a href="/fd-calculator">FD Calculator</a> <a href="/simple-compound-interest-calculator">Simple &amp; Compound Interest</a> <a href="/percentage-calculator">Percentage Calculator</a></div>
+<div><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms">Terms</a><a href="/contact">Contact</a></div>
+</div><div class="wrap" style="margin-top:14px">© 2026 SplitAI Tools. Results are estimates for information only.</div></footer>
+<script>
+live(()=>{
+ const P=num('p'),r=num('r')/100,t=num('t'),k=+$('#k').value,si=P*r*t,ca=P*Math.pow(1+r/k,k*t);
+ $('#out').innerHTML='<div class="row"><div><div class="muted">Simple interest</div><div class="big">'+inr(si,2)+'</div><div class="muted">Total '+inr(P+si,2)+'</div></div>'+
+ '<div><div class="muted">Compound interest</div><div class="big">'+inr(ca-P,2)+'</div><div class="muted">Total '+inr(ca,2)+'</div></div></div>'+
+ kv([['Difference (CI − SI)',inr(ca-P-si,2)]]);
+});
+</script>
+</body></html>

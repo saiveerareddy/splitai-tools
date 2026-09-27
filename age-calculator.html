@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-IN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Age Calculator – Exact Age in Years, Months &amp; Days</title>
+<meta name="description" content="Find your exact age in years, months and days from your date of birth. See total days lived and a countdown to your next birthday.">
+<link rel="canonical" href="https://tools.splitai.in/age-calculator">
+<meta property="og:title" content="Age Calculator – Exact Age in Years, Months &amp; Days"><meta property="og:description" content="Find your exact age in years, months and days from your date of birth. See total days lived and a countdown to your next birthday.">
+<meta property="og:url" content="https://tools.splitai.in/age-calculator"><meta property="og:type" content="website"><meta property="og:site_name" content="SplitAI Tools">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/style.css">
+<script src="/common.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Age Calculator", "url": "https://tools.splitai.in/age-calculator", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "description": "Find your exact age in years, months and days from your date of birth. See total days lived and a countdown to your next birthday.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I check age for an exam cut-off date?", "acceptedAnswer": {"@type": "Answer", "text": "Set 'Age on date' to the cut-off date given in the notification."}}, {"@type": "Question", "name": "Is a leap-year birthday handled?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Dates are calculated using the real calendar."}}]}</script>
+</head>
+<body data-slug="age-calculator"><header class="top"><div class="wrap">
+<a class="logo" href="/"><span class="dot">₹</span>SplitAI Tools</a>
+<nav class="top"><a href="/#money" class="hide-sm">Money</a><a href="/#everyday" class="hide-sm">Everyday</a><a href="https://www.splitai.in/">Split app</a>
+<button class="theme-toggle" id="themeBtn" aria-label="Toggle dark mode">◐</button></nav></div></header>
+<main class="wrap">
+<div class="crumbs"><a href="/">Home</a> › Everyday › Age Calculator</div>
+<div class="tool-head"><h1>🎂 Age Calculator</h1><p>Find your exact age from your date of birth, and how long until your next birthday.</p></div>
+<div class="layout"><div>
+<section class="card">
+<div class="row">
+ <div class="field"><label for="dob">Date of birth</label><input id="dob" type="date" value="2000-01-01"></div>
+ <div class="field"><label for="on">Age on date</label><input id="on" type="date"></div>
+</div>
+<div class="result" id="out"></div>
+</section>
+<p><button class="btn ghost" id="shareBtn">📤 Share this tool</button></p>
+<div class="ad"></div>
+<article class="prose">
+<h2>Where age calculation is used</h2>
+<p>Government job and exam forms (UPSC, SSC, banking), school admissions, passports and insurance often ask for your exact age on a particular cut-off date. Set "Age on date" to that cut-off date to check if you are eligible.</p>
+<h2>Frequently asked questions</h2><details><summary>How do I check age for an exam cut-off date?</summary><p>Set &#x27;Age on date&#x27; to the cut-off date given in the notification.</p></details><details><summary>Is a leap-year birthday handled?</summary><p>Yes. Dates are calculated using the real calendar.</p></details></article>
+</div>
+<aside class="side">
+<div class="cta card"><h3>Split expenses with friends?</h3><p>SplitAI tracks group bills, who owes whom and UPI settle-ups. It's free.</p><a class="btn" href="https://www.splitai.in/">Try SplitAI →</a></div>
+<div class="ad"></div>
+<div class="card"><h3>More free tools</h3><a class="l" href="/percentage-calculator">％ Percentage Calculator</a><a class="l" href="/discount-calculator">🏷️ Discount Calculator</a><a class="l" href="/days-between-dates">📅 Days Between Dates</a><a class="l" href="/unit-converter">📏 Unit Converter</a><a class="l" href="/word-counter">🔤 Word Counter</a><a class="l" href="/split-bill-calculator">🧾 Split Bill Calculator</a><a class="l" href="/trip-expense-splitter">✈️ Trip Expense Splitter</a><a class="l" href="/emi-calculator">🏦 EMI Calculator</a></div>
+</aside></div></main>
+<footer><div class="wrap cols">
+<div><b>SplitAI Tools</b><br>Free everyday calculators for India.<br>Made by <a href="https://www.splitai.in/">SplitAI</a>.</div>
+<div style="max-width:560px"><a href="/split-bill-calculator">Split Bill Calculator</a> <a href="/trip-expense-splitter">Trip Expense Splitter</a> <a href="/emi-calculator">EMI Calculator</a> <a href="/gst-calculator">GST Calculator</a> <a href="/sip-calculator">SIP Calculator</a> <a href="/fd-calculator">FD Calculator</a> <a href="/simple-compound-interest-calculator">Simple &amp; Compound Interest</a> <a href="/percentage-calculator">Percentage Calculator</a></div>
+<div><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms">Terms</a><a href="/contact">Contact</a></div>
+</div><div class="wrap" style="margin-top:14px">© 2026 SplitAI Tools. Results are estimates for information only.</div></footer>
+<script>
+{const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());$('#on').value=d.toISOString().slice(0,10);}
+live(()=>{
+ const b=new Date($('#dob').value),o=new Date($('#on').value);if(isNaN(b)||isNaN(o)||o<b){$('#out').innerHTML='Enter valid dates.';return;}
+ let y=o.getFullYear()-b.getFullYear(),m=o.getMonth()-b.getMonth(),d=o.getDate()-b.getDate();
+ if(d<0){m--;d+=new Date(o.getFullYear(),o.getMonth(),0).getDate();}if(m<0){y--;m+=12;}
+ const days=Math.round((o-b)/864e5);let nb=new Date(o.getFullYear(),b.getMonth(),b.getDate());if(nb<o)nb.setFullYear(o.getFullYear()+1);
+ const left=Math.round((nb-o)/864e5);
+ $('#out').innerHTML='<div class="muted">Age</div><div class="big">'+y+' years, '+m+' months, '+d+' days</div>'+
+  kv([['Total months',fmt(y*12+m,0)],['Total weeks',fmt(Math.floor(days/7),0)],['Total days',fmt(days,0)],['Next birthday',left===0?'Today! 🎉':'in '+left+' days ('+nb.toLocaleDateString('en-IN',{weekday:'long'})+')'],['Born on a',b.toLocaleDateString('en-IN',{weekday:'long'})]]);
+});
+</script>
+</body></html>

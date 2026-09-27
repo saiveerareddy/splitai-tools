@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-IN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Electricity Bill Calculator – Units &amp; Cost by Appliance (kWh)</title>
+<meta name="description" content="Estimate monthly electricity units (kWh) and bill amount from your fans, AC, fridge, geyser and other appliances. Find out what&#x27;s making your bill high.">
+<link rel="canonical" href="https://tools.splitai.in/electricity-bill-calculator">
+<meta property="og:title" content="Electricity Bill Calculator – Units &amp; Cost by Appliance (kWh)"><meta property="og:description" content="Estimate monthly electricity units (kWh) and bill amount from your fans, AC, fridge, geyser and other appliances. Find out what&#x27;s making your bill high.">
+<meta property="og:url" content="https://tools.splitai.in/electricity-bill-calculator"><meta property="og:type" content="website"><meta property="og:site_name" content="SplitAI Tools">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/style.css">
+<script src="/common.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Electricity Bill Calculator", "url": "https://tools.splitai.in/electricity-bill-calculator", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "description": "Estimate monthly electricity units (kWh) and bill amount from your fans, AC, fridge, geyser and other appliances. Find out what's making your bill high.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why is the fridge set to 60 W for 24 hours?", "acceptedAnswer": {"@type": "Answer", "text": "A fridge compressor switches on and off. About 60 W averaged over the day is typical for a mid-size fridge. Check its star-rating label for exact yearly units."}}, {"@type": "Question", "name": "How do I find my rate per unit?", "acceptedAnswer": {"@type": "Answer", "text": "Divide the total energy charges on a past bill by the units consumed."}}]}</script>
+</head>
+<body data-slug="electricity-bill-calculator"><header class="top"><div class="wrap">
+<a class="logo" href="/"><span class="dot">₹</span>SplitAI Tools</a>
+<nav class="top"><a href="/#money" class="hide-sm">Money</a><a href="/#everyday" class="hide-sm">Everyday</a><a href="https://www.splitai.in/">Split app</a>
+<button class="theme-toggle" id="themeBtn" aria-label="Toggle dark mode">◐</button></nav></div></header>
+<main class="wrap">
+<div class="crumbs"><a href="/">Home</a> › Health &amp; Home › Electricity Bill Calculator</div>
+<div class="tool-head"><h1>⚡ Electricity Bill Calculator</h1><p>Add your appliances to estimate monthly units and cost, and see which ones use the most.</p></div>
+<div class="layout"><div>
+<section class="card">
+<div class="row">
+ <div class="field"><label for="rate">Cost per unit (₹/kWh)</label><input id="rate" type="number" inputmode="decimal" value="7"></div>
+ <div class="field"><label for="days">Days in bill cycle</label><input id="days" type="number" inputmode="numeric" value="30"></div>
+</div>
+<div class="tbl-wrap" style="max-height:none"><table><thead><tr><th>Appliance</th><th>Watts</th><th>Hrs/day</th><th>Qty</th><th>Units</th><th></th></tr></thead><tbody id="ap"></tbody></table></div>
+<p><button class="btn ghost" id="add">+ Add appliance</button> <button class="btn ghost" id="reset">Reset to defaults</button></p>
+<div class="result" id="out"></div>
+</section>
+<p><button class="btn ghost" id="shareBtn">📤 Share this tool</button></p>
+<div class="ad"></div>
+<article class="prose">
+<h2>How units are calculated</h2>
+<p>1 unit = 1 kWh. Units = Watts × Hours per day × Quantity × Days ÷ 1000. For example, a 1500 W AC running 6 hours a day for 30 days uses 270 units.</p>
+<p>Real bills also include fixed charges, electricity duty and slab-based rates that differ by state. Enter your average rate per unit from a past bill for the best estimate.</p>
+<h2>Ways to cut your bill</h2>
+<ul><li>Set the AC to 24–26°C and use a timer.</li><li>Switch to BLDC fans and LED bulbs.</li><li>Turn the geyser off after use.</li></ul>
+<h2>Frequently asked questions</h2><details><summary>Why is the fridge set to 60 W for 24 hours?</summary><p>A fridge compressor switches on and off. About 60 W averaged over the day is typical for a mid-size fridge. Check its star-rating label for exact yearly units.</p></details><details><summary>How do I find my rate per unit?</summary><p>Divide the total energy charges on a past bill by the units consumed.</p></details></article>
+</div>
+<aside class="side">
+<div class="cta card"><h3>Split expenses with friends?</h3><p>SplitAI tracks group bills, who owes whom and UPI settle-ups. It's free.</p><a class="btn" href="https://www.splitai.in/">Try SplitAI →</a></div>
+<div class="ad"></div>
+<div class="card"><h3>More free tools</h3><a class="l" href="/bmi-calculator">⚖️ BMI Calculator</a><a class="l" href="/split-bill-calculator">🧾 Split Bill Calculator</a><a class="l" href="/trip-expense-splitter">✈️ Trip Expense Splitter</a><a class="l" href="/emi-calculator">🏦 EMI Calculator</a></div>
+</aside></div></main>
+<footer><div class="wrap cols">
+<div><b>SplitAI Tools</b><br>Free everyday calculators for India.<br>Made by <a href="https://www.splitai.in/">SplitAI</a>.</div>
+<div style="max-width:560px"><a href="/split-bill-calculator">Split Bill Calculator</a> <a href="/trip-expense-splitter">Trip Expense Splitter</a> <a href="/emi-calculator">EMI Calculator</a> <a href="/gst-calculator">GST Calculator</a> <a href="/sip-calculator">SIP Calculator</a> <a href="/fd-calculator">FD Calculator</a> <a href="/simple-compound-interest-calculator">Simple &amp; Compound Interest</a> <a href="/percentage-calculator">Percentage Calculator</a></div>
+<div><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms">Terms</a><a href="/contact">Contact</a></div>
+</div><div class="wrap" style="margin-top:14px">© 2026 SplitAI Tools. Results are estimates for information only.</div></footer>
+<script>
+const DEF=[{n:'Ceiling fan',w:75,h:10,q:3},{n:'LED bulb',w:9,h:6,q:6},{n:'Refrigerator (avg)',w:60,h:24,q:1},{n:'AC 1.5 ton',w:1500,h:6,q:1},{n:'TV',w:100,h:4,q:1},{n:'Geyser',w:2000,h:0.5,q:1},{n:'Washing machine',w:500,h:0.5,q:1},{n:'Wi-Fi router',w:10,h:24,q:1}];
+let A=store.get('elec',DEF.map(x=>({...x})));
+const inp=(i,k,v,w)=>`<input data-i="${i}" data-k="${k}" value="${v}" ${k==='n'?'':'type="number" inputmode="decimal"'} style="padding:7px;min-width:${w}px">`;
+function draw(){
+ $('#ap').innerHTML=A.map((a,i)=>`<tr><td>${inp(i,'n',String(a.n).replace(/"/g,'&quot;'),110)}</td><td>${inp(i,'w',a.w,60)}</td><td>${inp(i,'h',a.h,50)}</td><td>${inp(i,'q',a.q,44)}</td><td id="u${i}"></td><td><button class="x" data-del="${i}" aria-label="Remove">✕</button></td></tr>`).join('');
+ $$('#ap input').forEach(el=>el.oninput=()=>{const i=+el.dataset.i,k=el.dataset.k;A[i][k]=k==='n'?el.value:(parseFloat(el.value)||0);calc();});
+ $$('#ap [data-del]').forEach(b=>b.onclick=()=>{A.splice(+b.dataset.del,1);draw();});calc();
+}
+function calc(){
+ store.set('elec',A);const d=num('days'),r=num('rate');let tot=0;const us=A.map((a,i)=>{const u=a.w*a.h*a.q*d/1000;tot+=u;const c=$('#u'+i);if(c)c.textContent=fmt(u,1);return {n:a.n,u};});
+ us.sort((a,b)=>b.u-a.u);const cols=['#ef4444','#f59e0b','#4f46e5','#0ea5a4','#8b5cf6','#10b981','#64748b'];
+ $('#out').innerHTML='<div class="muted">Estimated bill (energy charges)</div><div class="big">'+inr(tot*r)+'</div>'+kv([['Units (kWh)',fmt(tot,1)],['Biggest user',us[0]?us[0].n+' ('+(tot?fmt(us[0].u/tot*100,0):0)+'%)':'—']])+
+ bar(us.slice(0,6).map((x,i)=>({v:x.u,c:cols[i],label:x.n})));
+}
+$('#add').onclick=()=>{A.push({n:'Appliance',w:100,h:1,q:1});draw();};$('#reset').onclick=()=>{A=DEF.map(x=>({...x}));draw();};
+$('#rate').oninput=calc;$('#days').oninput=calc;draw();
+</script>
+</body></html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-IN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fuel Cost Calculator – Trip Petrol/Diesel Cost &amp; Per-Person Split</title>
+<meta name="description" content="Calculate petrol or diesel cost for any road trip from distance, mileage and fuel price. Split fuel cost between friends.">
+<link rel="canonical" href="https://tools.splitai.in/fuel-cost-calculator">
+<meta property="og:title" content="Fuel Cost Calculator – Trip Petrol/Diesel Cost &amp; Per-Person Split"><meta property="og:description" content="Calculate petrol or diesel cost for any road trip from distance, mileage and fuel price. Split fuel cost between friends.">
+<meta property="og:url" content="https://tools.splitai.in/fuel-cost-calculator"><meta property="og:type" content="website"><meta property="og:site_name" content="SplitAI Tools">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/style.css">
+<script src="/common.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Fuel Cost Calculator", "url": "https://tools.splitai.in/fuel-cost-calculator", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "description": "Calculate petrol or diesel cost for any road trip from distance, mileage and fuel price. Split fuel cost between friends.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does this work for CNG or EV?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. For CNG, enter mileage in km/kg and the price per kg. For an EV, enter km per kWh and the charging cost per kWh."}}, {"@type": "Question", "name": "Should I add tolls?", "acceptedAnswer": {"@type": "Answer", "text": "Tolls are not included. Add them separately and split them too."}}]}</script>
+</head>
+<body data-slug="fuel-cost-calculator"><header class="top"><div class="wrap">
+<a class="logo" href="/"><span class="dot">₹</span>SplitAI Tools</a>
+<nav class="top"><a href="/#money" class="hide-sm">Money</a><a href="/#everyday" class="hide-sm">Everyday</a><a href="https://www.splitai.in/">Split app</a>
+<button class="theme-toggle" id="themeBtn" aria-label="Toggle dark mode">◐</button></nav></div></header>
+<main class="wrap">
+<div class="crumbs"><a href="/">Home</a> › Split &amp; Share › Fuel Cost Calculator</div>
+<div class="tool-head"><h1>⛽ Fuel Cost Calculator</h1><p>Work out the fuel cost for a drive or road trip, and each person&#x27;s share.</p></div>
+<div class="layout"><div>
+<section class="card">
+<div class="row">
+ <div class="field"><label for="d">Distance (km)</label><input id="d" type="number" inputmode="decimal" value="350"></div>
+ <div class="field"><label for="m">Mileage (km per litre)</label><input id="m" type="number" inputmode="decimal" value="15"></div>
+</div>
+<div class="row">
+ <div class="field"><label for="p">Fuel price (₹/litre)</label><input id="p" type="number" inputmode="decimal" value="105"></div>
+ <div class="field"><label for="n">People sharing</label><input id="n" type="number" inputmode="numeric" value="4"></div>
+</div>
+<label style="display:flex;gap:8px;align-items:center;font-weight:500"><input id="rt" type="checkbox" style="width:auto"> Round trip (double the distance)</label>
+<div class="result" id="out"></div>
+</section>
+<p><button class="btn ghost" id="shareBtn">📤 Share this tool</button></p>
+<div class="ad"></div>
+<article class="prose">
+<h2>Formula</h2>
+<p>Fuel needed = Distance ÷ Mileage. Fuel cost = Fuel needed × Price per litre. Highway mileage is usually 10–20% better than city mileage.</p>
+<p>Enter today's fuel price in your city, since prices vary by state. Planning a group trip? Track all the shared costs with the <a href="/trip-expense-splitter">Trip Expense Splitter</a>.</p>
+<h2>Frequently asked questions</h2><details><summary>Does this work for CNG or EV?</summary><p>Yes. For CNG, enter mileage in km/kg and the price per kg. For an EV, enter km per kWh and the charging cost per kWh.</p></details><details><summary>Should I add tolls?</summary><p>Tolls are not included. Add them separately and split them too.</p></details></article>
+</div>
+<aside class="side">
+<div class="cta card"><h3>Split expenses with friends?</h3><p>SplitAI tracks group bills, who owes whom and UPI settle-ups. It's free.</p><a class="btn" href="https://www.splitai.in/">Try SplitAI →</a></div>
+<div class="ad"></div>
+<div class="card"><h3>More free tools</h3><a class="l" href="/split-bill-calculator">🧾 Split Bill Calculator</a><a class="l" href="/trip-expense-splitter">✈️ Trip Expense Splitter</a><a class="l" href="/daily-expense-tracker">📒 Daily Expense Tracker</a><a class="l" href="/emi-calculator">🏦 EMI Calculator</a><a class="l" href="/gst-calculator">🧮 GST Calculator</a><a class="l" href="/sip-calculator">📈 SIP Calculator</a></div>
+</aside></div></main>
+<footer><div class="wrap cols">
+<div><b>SplitAI Tools</b><br>Free everyday calculators for India.<br>Made by <a href="https://www.splitai.in/">SplitAI</a>.</div>
+<div style="max-width:560px"><a href="/split-bill-calculator">Split Bill Calculator</a> <a href="/trip-expense-splitter">Trip Expense Splitter</a> <a href="/emi-calculator">EMI Calculator</a> <a href="/gst-calculator">GST Calculator</a> <a href="/sip-calculator">SIP Calculator</a> <a href="/fd-calculator">FD Calculator</a> <a href="/simple-compound-interest-calculator">Simple &amp; Compound Interest</a> <a href="/percentage-calculator">Percentage Calculator</a></div>
+<div><a href="/about">About</a><a href="/privacy-policy">Privacy</a><a href="/terms">Terms</a><a href="/contact">Contact</a></div>
+</div><div class="wrap" style="margin-top:14px">© 2026 SplitAI Tools. Results are estimates for information only.</div></footer>
+<script>
+function calc(){const d=num('d')*($('#rt').checked?2:1),l=num('m')?d/num('m'):0,c=l*num('p'),n=Math.max(1,num('n'));
+ $('#out').innerHTML='<div class="muted">Total fuel cost</div><div class="big">'+inr(c)+'</div>'+kv([['Fuel needed',fmt(l,1)+' L'],['Per person',inr(c/n)],['Cost per km',inr(d?c/d:0,2)],['Total distance',fmt(d,0)+' km']]);}
+live(calc);$('#rt').addEventListener('change',calc);
+</script>
+</body></html>
